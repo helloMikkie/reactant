@@ -95,10 +95,13 @@ file: src/App.js
 import './App.css';
 ```
 ## Stateless vs Stateful Components
-Two Types of Data: props and state  
-**props** are read only and set by parent component
+Two Types of Data:  
+props and state  
+---
+**props** are read only and set by parent component  
+---
 **state** is defined within a component and can change during the lifecycle of a component
-
+---
 src/messages/message-view.js  
 ```jsx
 import React, { Component } from 'react';
