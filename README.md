@@ -2,7 +2,7 @@
 
 ### Introducing JSX Syntax
 index.js
-```
+```jsx
 import React from 'react';
         import ReactDOM from 'react-dom';
 
