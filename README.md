@@ -132,7 +132,7 @@ export default MessageView;
 ```
 file: src/App.css
 ```css
-container {
+.container {
     margin-left: 40px;
 }
 
@@ -168,7 +168,7 @@ class App extends Component {
 
 export default App;
 ```
-#### using funcional syntax
+#### using functional syntax
 
 file: src/messages/message-view.js
 ```jsx
