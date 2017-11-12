@@ -98,12 +98,12 @@ import './App.css';
 
 Two Types of Data:  
 props and state  
----
+
 **props** are read only and set by parent component  
----
-**state** is defined within a component and can change during the lifecycle of a component
----
+**state** is defined within a component and can change during the lifecycle of a component  
+
 src/messages/message-view.js  
+
 ```jsx
 import React, { Component } from 'react';
 
@@ -130,5 +130,41 @@ class MessageView extends Component {
 
 export default MessageView;
 ```
+file: src/App.css
+```css
+container {
+    margin-left: 40px;
+}
 
+.label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
+.value {
+    color: #474747;
+    position: absolute;
+    left: 200px;
+}
+
+.message .value {
+    font-style: italic;
+}
+```
+src/App.js
+```jsx
+import React, { Component } from 'react';
+
+import './App.css';
+import MessageView from './messages/message-view';
+
+class App extends Component {
+    render(){
+    return (
+        <MessageView />
+    )
+    }
+}
+
+export default App;
+```
