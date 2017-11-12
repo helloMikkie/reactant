@@ -94,7 +94,7 @@ file: src/App.js
 ```jsx
 import './App.css';
 ```
-## Stateless vs Stateful Components  
+## Stateless vs Stateful Components
 
 Two Types of Data:  
 props and state  
