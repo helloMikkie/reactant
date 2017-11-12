@@ -58,3 +58,73 @@ ReactDOM.render(<App/>, document.getElementById('root'));
 
 export default App;
 ```
+## Styling JSX Elements
+
+### JSX inline styling
+file /src/App.js
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+
+    render(){
+    const headerStyle = {
+        color: '#ff0000',
+        textDecoration: 'underline'
+    }
+    return (
+        <div>
+        // alternative: 
+        // <h2 style={{color:'#ff0000'}}>Hello World Again!</h2>
+        <h2 style={headerStyle}>Hello World Again!</h2>
+        </div>
+    )
+    }
+  }
+export default App;
+```
+### external CSS
+file: src/App.css
+```css
+h2 {
+    font-size: 4rem;
+}
+```
+file: src/App.js
+```jsx
+import './App.css';
+```
+## Stateless vs Stateful Components
+Two Types of Data: props and state  
+**props** are read only and set by parent component
+**state** is defined within a component and can change during the lifecycle of a component
+
+src/messages/message-view.js  
+```jsx
+import React, { Component } from 'react';
+
+class MessageView extends Component {
+    render() {
+    return(
+        <div className="container">
+        <div className="from">
+            <span className="label">From: </span>
+            <span className="value">John Doe</span>
+        </div>
+        <div className="status">
+            <span className="label">Status: </span>
+            <span className="value"> Unread</span>
+        </div>
+        <div className="message">
+            <span className="label">Message: </span>
+            <span className="value">Have a great day!</span>
+        </div>
+        </div>
+    )
+    }
+}
+
+export default MessageView;
+```
+
+
